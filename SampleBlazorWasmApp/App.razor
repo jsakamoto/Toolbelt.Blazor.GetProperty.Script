@@ -1,0 +1,17 @@
+﻿@inject IJSRuntime JSRuntime
+
+_onLine: @_onLine
+
+@code
+{
+    private bool _onLine;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _onLine = await JSRuntime.InvokeAsync<bool>("Toolbelt.Blazor.getProperty", "navigator.onLine");
+            this.StateHasChanged();
+        }
+    }
+}
