@@ -10,7 +10,14 @@ _onLine: @_onLine
     {
         if (firstRender)
         {
+            // You can get any property values under the window object 
+            // using the "Toolbelt.Blazor.getProperty" JavaScript function. 
+            // What you should do to use that JavaScript function in your Blazor app is 
+            // ONLY add the "Toolbelt.Blazor.GetProperty.Script" package to your Blazor project.
+
             _onLine = await JSRuntime.InvokeAsync<bool>("Toolbelt.Blazor.getProperty", "navigator.onLine");
+
+
             this.StateHasChanged();
         }
     }
