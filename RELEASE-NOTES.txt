@@ -1,2 +1,5 @@
+v.1.1.0
+- Reducing the size of the script.
+
 v.1.0.0
 - 1st release.
