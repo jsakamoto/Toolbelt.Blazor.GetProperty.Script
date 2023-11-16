@@ -1,1 +1,1 @@
-export const beforeStart=()=>{(n=>{const t=n.Toolbelt=n.Toolbelt||{},i=t.Blazor=t.Blazor||{};i.getProperty=t=>t.replace(/^window\./,"").split(".").reduce((n,t)=>typeof n=="undefined"||n===null?n:n[t],n)})(window)};
+(n=>{const t=n.Toolbelt=n.Toolbelt||{},i=t.Blazor=t.Blazor||{};i.getProperty=t=>t.replace(/^window\./,"").split(".").reduce((n,t)=>typeof n=="undefined"||n===null?n:n[t],n)})(window);
