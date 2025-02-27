@@ -1,3 +1,7 @@
+v.1.3.0
+- Enhance: Add .net9.0 to the list of supported frameworks.
+- Fix: It didn't work correctly when the .NET SDK version is 10.
+
 v.1.2.0
 - Initialize the "getProperty" method immediately after the module is loaded without waiting to invoke the beforeStart function.
 
